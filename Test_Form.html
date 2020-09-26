@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="./Form_CSS.css" rel="stylesheet">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+      <hr>
+      <!--Add your code below-->
+      <form action="/practice.html" method="POST">
+        <img src="https://i.pinimg.com/originals/7c/4c/8a/7c4c8abcc5d5ac5c6724cbf0078fc5e2.jpg" alt="burger man"/>
+        <p>"I'll gladly pay you Tuesday for a hamburger today." <br> - Wimpy</p>
+        <hr>
+        <section class="login">
+          <h1>Login to start creating a burger!</h1>
+          <lable for="username">Burger name:</lable>
+          <input type="text" name="username" value="Burger_Brian" id="username">
+          <br>
+          <lable for="user-pw">Password:</lable>
+          <input type="password" name="user-pw" value="chill" id="user-pw">
+        </section>
+        <hr>
+        <section class="protein">
+          <h1>Create a burger!</h1>
+          <label for="patty">What type of protein would you like?</label>
+          <input type="text" name="patty" id="patty" value="Beyond Beef">
+        </section>
+        <section>
+          <label for="amount">How many patties would you like?</label>
+          <input type="number" name="amount" id="amount" value="2" step="1">
+        </section>
+        <hr>
+        <section class="cooked">
+          <label for="doneness">How do you want your patty/patties cooked?</label>
+          <br>
+          <span>Rare</span>
+          <input type="range" name="doneness" id="doneness" value="75" min="0" max="100" step="1">
+          <span>Well-Done</span>
+        </section>
+        <hr>
+        <br>
+        <section class="toppings">
+          <span>What toppings would you like?</span>
+          <br>
+          <label for="lettuce">Lettuce</label>
+          <input id="lettuce" name="toppings" type="checkbox" value="lettuce">
+          <label for="tomato">Tomato</label>
+          <input id="tomato" name="topping" type="checkbox" value="tomato">
+          <label for="onions">Onions</label>
+          <input id="onions" name="topping" type="checkbox" value="onions">
+          <label for="pickles">Pickles</label>
+          <input id="pickles" name="topping" type="checkbox" value="pickles">
+        </section>
+        <hr>
+        <br>
+        <section class="cheesy">
+          <span>Would you like to add cheese?</span>
+          <br>
+          <input type="radio" id="yes" name="cheese" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="cheese" value="no">
+          <label for="no">No</label>
+        </section>
+        <hr>
+        <br>
+        <section class="bun-type">
+					<label for="bun">What type of bun would you like?</label>
+          <select name="bun" id="bun">
+            <option value="sesame">Sesame</option>
+            <option value="potato">Potato</option>
+            <option value="lettuce">Lettuce</option>
+          </select>
+          <hr>
+          <br>
+          <section class="sauce-selection">
+            <label for="sauce">What type of sauce would you like?</label>
+            <input list="sauces" id="sauce" name="sauce">
+            <datalist id="sauces">
+              <option value="ketchup"></option>
+              <option value="mayo"></option>
+              <option value="bbq"></option>
+            </datalist>
+          </section>
+          <hr>
+          <br>
+          <section class="extra-info">
+            <label for="extra">Anything else you want to add?</label>
+            <br>
+            <textarea id="extra" name="extra" rows="3" cols="40">add text here</textarea>
+          </section>
+          <hr>
+          <br>
+          <section class="submission">
+            <input type="submit" value="Order">
+          </section>
+  
+      </form>
+      
+      
+    </section>
+  </body>
+</html>
