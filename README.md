@@ -8,7 +8,7 @@ These are my cheatsheets.
 * [Elements and Structure](https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet)
 * [Tables](https://www.codecademy.com/learn/learn-html/modules/learn-html-tables/cheatsheet)
 * [Forms](https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet)
-* []()
+* [Semantic HTML](https://www.codecademy.com/learn/learn-html/modules/learn-semantic-html/cheatsheet)
 
 Class work
 * [Bears Homepage](https://github.com/briansegs/HTML/blob/master/Bears_Home_01.html)
