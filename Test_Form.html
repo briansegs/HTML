@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="./Form_CSS.css" rel="stylesheet">
-    <title>HTML Forms</title>
+    <title> 🍔 </title>
   </head>
   <body>
     <section id="overlay">
@@ -12,16 +12,16 @@
       <hr>
       <!--Add your code below-->
       <form action="/practice.html" method="POST">
-        <img src="https://i.pinimg.com/originals/7c/4c/8a/7c4c8abcc5d5ac5c6724cbf0078fc5e2.jpg" alt="burger man"/>
+        <a href="https://en.wikipedia.org/wiki/J._Wellington_Wimpy" target="_blank"><img src="https://i.pinimg.com/originals/7c/4c/8a/7c4c8abcc5d5ac5c6724cbf0078fc5e2.jpg" alt="burger man" width="250" height="250" /></a>
         <p>"I'll gladly pay you Tuesday for a hamburger today." <br> - Wimpy</p>
         <hr>
         <section class="login">
           <h1>Login to start creating a burger!</h1>
           <lable for="username">Burger name:</lable>
-          <input type="text" name="username" value="Burger_Brian" id="username">
+          <input type="text" name="username" value="Burger_Brian" id="username" minlength="5" maxlength="15" pattern="[a-zA-Z0-9-_]+" required>
           <br>
           <lable for="user-pw">Password:</lable>
-          <input type="password" name="user-pw" value="chill" id="user-pw">
+          <input type="password" name="user-pw" value="chill" id="user-pw" minlength="5" maxlength="15" pattern="[a-zA-Z0-9-_]+" required>
         </section>
         <hr>
         <section class="protein">
@@ -31,7 +31,7 @@
         </section>
         <section>
           <label for="amount">How many patties would you like?</label>
-          <input type="number" name="amount" id="amount" value="2" step="1">
+          <input type="number" name="amount" id="amount" value="1" step="1" min="1" max="3">
         </section>
         <hr>
         <section class="cooked">
@@ -46,14 +46,14 @@
         <section class="toppings">
           <span>What toppings would you like?</span>
           <br>
-          <label for="lettuce">Lettuce</label>
           <input id="lettuce" name="toppings" type="checkbox" value="lettuce">
-          <label for="tomato">Tomato</label>
+          <label for="lettuce">Lettuce</label>
           <input id="tomato" name="topping" type="checkbox" value="tomato">
-          <label for="onions">Onions</label>
+          <label for="tomato">Tomato</label>
           <input id="onions" name="topping" type="checkbox" value="onions">
-          <label for="pickles">Pickles</label>
+          <label for="onions">Onions</label>
           <input id="pickles" name="topping" type="checkbox" value="pickles">
+          <label for="pickles">Pickles</label>
         </section>
         <hr>
         <br>
@@ -74,29 +74,30 @@
             <option value="potato">Potato</option>
             <option value="lettuce">Lettuce</option>
           </select>
-          <hr>
+        </section>
+        <hr>
+        <br>
+        <section class="sauce-selection">
+          <label for="sauce">What type of sauce would you like?</label>
+          <input list="sauces" id="sauce" name="sauce">
+          <datalist id="sauces">
+            <option value="ketchup"></option>
+            <option value="mayo"></option>
+            <option value="bbq"></option>
+          </datalist>
+        </section>
+        <hr>
+        <br>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
           <br>
-          <section class="sauce-selection">
-            <label for="sauce">What type of sauce would you like?</label>
-            <input list="sauces" id="sauce" name="sauce">
-            <datalist id="sauces">
-              <option value="ketchup"></option>
-              <option value="mayo"></option>
-              <option value="bbq"></option>
-            </datalist>
-          </section>
-          <hr>
-          <br>
-          <section class="extra-info">
-            <label for="extra">Anything else you want to add?</label>
-            <br>
-            <textarea id="extra" name="extra" rows="3" cols="40">add text here</textarea>
-          </section>
-          <hr>
-          <br>
-          <section class="submission">
-            <input type="submit" value="Order">
-          </section>
+          <textarea id="extra" name="extra" rows="3" cols="40" maxlength="250">add text here</textarea>
+        </section>
+        <hr>
+        <br>
+        <section class="submission">
+          <input type="submit" value="Order">
+        </section>
   
       </form>
       
